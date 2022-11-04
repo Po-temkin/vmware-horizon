@@ -6,7 +6,7 @@
 #   Horizon: 2203
 #
 # Desctiption:
-#   Adding two vCender servers
+#   Adding two vCenter servers
 #   More information in the documentation https://developer.vmware.com/apis/1298/view
 
 #Vars for authorization and mode; Uncomment the desired block
