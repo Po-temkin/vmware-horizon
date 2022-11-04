@@ -23,14 +23,14 @@ $Password = ''
 #>
 
 #Vars for metod
-#$DesktopSummaryData #Use horizon_view_api_query_desktop.ps1 to get it 
-#$DesktopUserEntitlements @Use horizon_view_api_delete_desktop_entitlement.ps1 to get it
 
 #Opening API session
 $ViewServer = Connect-HVServer -server $FQDN -user $Username -password $Password -domain $Domain
 $ViewAPI = $ViewServer.ExtensionData
 
 #Serching desired pair
+#Use horizon_view_api_query_desktop.ps1 to get $DesktopSummaryData
+#Use horizon_view_api_delete_desktop_entitlement.ps1 to get $DesktopUserEntitlements
 ForEach ($DesktopUserEntitlement in $DesktopUserEntitlements)
 {
     $UserEntitlementInfo = $ViewAPI.UserEntitlement.UserEntitlement_Get($DesktopUserEntitlement)
