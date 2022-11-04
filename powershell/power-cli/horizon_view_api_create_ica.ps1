@@ -16,14 +16,12 @@ $Domain = Read-Host "Type domain"
 $Username = Read-Host "Type username"
 $Password = Read-Host "Type password" -AsSecureString
 $ICAPassword = Read-Host "Type ICA password" -AsSecureString 
-#>
 
-<#
 $FQDN = ''
 $Domain = ''
 $Username = ''
 $Password = ''
-$ICAPasswordPlain = ''
+$ICAPassword = ''
 #>
 
 #Vars for metod

@@ -16,9 +16,7 @@ $FQDN = Read-Host "Type host fqnd"
 $Domain = Read-Host "Type domain"
 $Username = Read-Host "Type username"
 $Password = Read-Host "Type password" -AsSecureString
-#>
 
-<#
 $FQDN = ''
 $Domain = ''
 $Username = ''
