@@ -21,10 +21,11 @@ $FQDN = ''
 $Domain = ''
 $Username = ''
 $Password = ''
-$ICAPassword = ''
 #>
 
 #Vars for metod
+#Vars for $ICAPasswordENC object
+$ICAPasswordPlain = 'qwerty123456'
 
 #Opening API session
 $ViewServer = Connect-HVServer -server $FQDN -user $Username -password $Password -domain $Domain
