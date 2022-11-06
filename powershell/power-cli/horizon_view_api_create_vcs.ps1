@@ -26,21 +26,21 @@ $Password = ''
 #Vars for $ServerSpec object
 $VCServerName1 = 'vcs01.domain.com'
 $VCServerName2 = 'vcs02.domain.com'
-$VCPort = '443'
+$VCPort = 443
 $UseSSL = $true
 $VCUsername = 'vcadmin' 
 $VCPasswordPlain = 'qwerty12345'
 $VCType = 'VIRTUAL_CENTER'
 
 #Vars for $VirtualCenterConcurrentOperationLimits object
-$VCProvisionLimit = '20'
-$VCPowerOperationLimit = '50'
-$ComposerMaintenanceLimit ='12'
-$ICEProvisionLimit = '20'
+$VCProvisionLimit = 20
+$VCPowerOperationLimit = 50
+$ComposerMaintenanceLimit = 12
+$ICEProvisionLimit = 20
 
 #Vars for $VirtualCenterStorageAcceleratorData object
 $VCStorageADEnabled = $true
-$VCStorageADCache = '1024'
+$VCStorageADCache = 1024
 
 #Vars for $VirtualCenterSpec object
 $VCDescription = ''
