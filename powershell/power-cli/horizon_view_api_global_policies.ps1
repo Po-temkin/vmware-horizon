@@ -6,7 +6,7 @@
 #   Horizon: 2203
 #
 # Desctiption:
-#   Adding two vCenter servers
+#   Updating global policies
 #   More information in the documentation https://developer.vmware.com/apis/1298/view
 
 #Vars for authorization and mode; Uncomment the desired block
@@ -28,7 +28,7 @@ $MultimediaRedirection = 'Deny'
 $USBAccess = 'Allow'
 $RemoteMode = 'Allow'
 $PCoIPHardwareAcceleration = 'Deny' 
-$HardwareAccelerationPriority = '' # Must be set if $PCoIPHardwareAcceleration !=$null
+$HardwareAccelerationPriority = $null
 
 #Opening API session
 $ViewServer = Connect-HVServer -server $fqdn -user $username -password $password -domain $domain
